@@ -1,9 +1,11 @@
-# Data_Structure
+# Data Structure
 
-## learn data structure
+## Learn Data Structure
 
-- Theory
+### Theory
 
-1.**Algorithm**
+- 1. **Algorithm**
+- 2. **Data Structure**
+- 3. **Memory Allocation And Memory Leak**
 
-- Practical
+### Practical

@@ -1,0 +1,41 @@
+1.What is Memory Allocation?
+
+    Memory allocation refers to the process of reserving a portion of computer memory for a program or process to use.
+    In the context of data structures, memory allocation is important because it determines how and where data is stored in memory.
+    There are two main types of memory allocation:
+    1.Static Memory Allocation
+        - Memory is allocated at compile time.
+        - The size and type of memory required are known before the program runs.
+        - Examples include arrays with a fixed size.
+    2.Dynamic Memory Allocation:
+        - Memory is allocated at runtime.
+        - The size and type of memory required can change during the execution of the program.
+        - Examples dynamic arrays,linked lists,and other structure that can grow or shrink as needed.
+        - In javaScript, dynamic memory allocation is managed by the  javaScript engine using  functions like 'new' for creating  objects and arrays.
+
+2.What is Memory Leak ?
+  
+    A memory leak occurs when a program retains memory that it no longer needs, causing a gradual decrease in available memory.
+    This happens because the allocated memory is not properly released back to the system. 
+
+3.Common Causes of Memory Leaks in JavaScript
+
+    1.Global Variables:
+        Variables that are defined in the global scope stay in memory for the lifetime of the application.
+
+    2.Event Listeners:
+        If event listeners are not properly removed when they are no longer needed, they can hold references to objects, preventing garbage collection.
+
+    3.Forgotten Timers:
+        Set intervals or timeouts that are not cleared can hold references to objects.
+
+3.Who to preventing Memory Leaks ?
+
+    1.Use let and const instead of var to limit the scope of variables.
+    2.Remove event listeners when they are no longer needed.
+    3.Clear intervals and timeouts with clearInterval and clearTimeout.
+    3.Be cautious with closures and ensure they do not unintentionally hold references to large objects.
+
+
+
+
