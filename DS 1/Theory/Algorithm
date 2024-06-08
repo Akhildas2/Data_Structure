@@ -1,0 +1,24 @@
+## 1.What is Algorithm ?
+
+An algorithm is basically a set of instructions, like a recipe.It's a way of breaking down a problem or task into a step-by-step process that a computer can follow.
+
+## 2.why we use that ?
+
+* **Solve problems:** 
+1.They can be used to solve complex problems efficiently and accurately.
+2.There are multiple ways to solve one problem.
+* **Automate tasks:** They allow computers to do things automatically, without needing human intervention. This can save us time and effort.
+* **Make decisions:** Algorithms can be used to make decisions based on data. This is becoming increasingly important in fields like artificial intelligence.
+
+## 3.Application of Algorithm ?
+
+- **Searching the web:** Search engines like Google use algorithms to find the most relevant websites for your search query.
+- **Social media feeds:** Social media platforms use algorithms to personalize your feed, showing you content that you're more likely to be interested in.
+- **GPS navigation:** GPS navigation systems use algorithms to find the best route for you to take, considering factors like traffic and distance.
+
+## 4.Characteristics of Algorithm ?
+
+* Well defined inputs and outputs
+* Each step should be clear and unambiguous
+* Language independent 
+
