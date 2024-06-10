@@ -17,7 +17,9 @@ const fibonacci = (number) => {
     for (let i = 2; i < number; i++) {
         arr.push(arr[i - 1] + arr[i - 2])
     }
-    return arr[number]
+    console.log("result", arr);
+
+    return arr
 }
 fibonacci(10)
 
@@ -28,7 +30,8 @@ fibonacci(10)
 //The recursive calls continue until they reach a base case, which is a condition that stops the recursion.
 
 const fibonacciNumber = (number) => {
-    if (number <= 1) return number;
-    return fibonacciNumber(number - 1) + fibonacciNumber(number - 2)
+    return number<=1 ? number : fibonacciNumber(number - 1) + fibonacciNumber(number - 2)
 }
-console.log(fibonacciNumber(10-1))
+console.log(fibonacciNumber(10 - 1))
+
+
