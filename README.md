@@ -8,6 +8,8 @@
 2. **Data Structure**
 3. **Memory Allocation And Memory Leak**
 4. **Big o Notation**
+5. **Array**
+
 
 
 ### Practical
