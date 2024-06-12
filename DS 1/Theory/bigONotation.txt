@@ -1,0 +1,19 @@
+1.What is Big o notation ?
+
+    Big O notation is a mathematical concept used in computer science to describe the performance or complexity of an algorithm. Specifically, it characterizes the worst-case scenario in terms of the time or space an algorithm will take relative to the size of the input data.
+
+
+     Key concept
+
+        1.Time Complexity
+            * Describes the amount of time an algorithm takes to complete as a function of the length of the input.
+
+        2.Space Complexity
+            * Describes the amount of memory an algorithm uses as a function of the length of the input.
+
+
+    Common Big o Notations
+
+        1.O(1) - Constant Time:
+            *         
+

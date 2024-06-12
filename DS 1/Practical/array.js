@@ -1,5 +1,6 @@
 //array
 //An array is a data structure in JavaScript that stores an ordered collection of elements.
+// arrays are mutable, which means their content can be changed after they are created. 
 
 
 //object 
@@ -7,7 +8,7 @@ let person = {
     name: "akhil",
     age: 20
 }
-
+//create array
 let arr = ['apple', 'mango', 'pineapple', 'watermelone', person]
 console.log("init arr", arr[4]);
 
@@ -38,6 +39,7 @@ console.log("shift arr", arr);
 
 
 //for looping the array
+//lenght is property of an array indicates the total number of elements present 
 for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 }
