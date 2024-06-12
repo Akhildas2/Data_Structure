@@ -1,0 +1,45 @@
+1.What is linked list ?
+
+    A linked list is a linear data structure where each element, called a node, contains two main components:
+        1.Data: The actual value or data stored in the node.
+        2.Pointer (Next): A reference to the next node in the sequence.
+2.Types of Linked list
+
+    1.singly Linked List:
+        
+        * Each node points to the next node.
+        * The last node points to 'null', indicating the end of the list.
+
+    2.Doubly Linked List:
+
+        * Each node has two pointers: one to the next node and one to the previous node.
+        * Allows traversal in both directions.
+
+    3. Circular Linked List:
+
+        * The last node points back to the first node, forming a circle.
+        * Can be singly or doubly linked.
+
+3.What is the advantagess of Linked Lists
+
+    * Dynamic Size: Can grow or shrink in size dynamically, unlike arrays which have a fixed size.
+    * Efficient Insertions/Deletions: Insertions and deletions can be more efficient, particularly for large datasets where shifting elements in arrays would be costly.
+  
+4.Disadvantages of Linked Lists
+
+    * Memory Usage: Requires additional memory for storing pointers.
+    * Traversal: Accessing elements is slower than arrays because nodes must be accessed sequentially.
+
+5.The linked list data structure supports three main operations
+    
+    * insertion - To add an element at the beginning,end or at a given index in the list.
+    * Deletion - To remove an item given its index or value
+    * Search - To find an element given its value
+
+6.Use Cases of Linked Lists
+
+    1.Implementing Stacks and Queues: Linked lists are often used to implement other data structures like stacks and queues due to their dynamic size and efficient insertion/deletion operations.
+    2.Navigation Systems: In scenarios where you need a dynamic and flexible way to traverse and manage elements, like browser history or undo functionality in text editors.
+    3.Graph Adjacency Lists: Representing graphs where each node points to its adjacent nodes.
+    4.image viewer
+      
