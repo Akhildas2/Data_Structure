@@ -19,15 +19,15 @@ const twoSum = (nums, target) => {
 twoSum([1, 2, 3, 14, 6], 9)
 
 //obj solution
-const twoSumObj = (nums,target)=>{
-    let obj={};
-    for(let i=0;i< nums.length;i++){
-        if(obj[target-nums[i]] >=0){
-            console.log("result obj",[target-nums[i],i]);
-            return obj[target-nums[i],i]
-        }else{
-            obj[nums[i]]=i
+const twoSumObj = (nums, target) => {
+    let obj = {};
+    for (let i = 0; i < nums.length; i++) {
+        if (obj[target - nums[i]] >= 0) {
+            console.log("result obj", [target - nums[i], i]);
+            return obj[target - nums[i], i]
+        } else {
+            obj[nums[i]] = i
         }
     }
 }
-twoSumObj([1,2,3,4,5],8)
+twoSumObj([1, 2, 3, 4, 5], 8)

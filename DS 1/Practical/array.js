@@ -110,12 +110,12 @@ console.log("numbers find", newNumsFind);
 //The rest operator allows us to represent an indefinite number of arguments as an array. 
 const nums1 = [1, 2, 3, 4, 5]
 const nums2 = [6, 7, 8, 9]
-const final =[...nums1,...nums2]//spread operator
-console.log("final ",final);
+const final = [...nums1, ...nums2]//spread operator
+console.log("final ", final);
 function nums(...number) {
     return number;
 }
-console.log("nums ",nums(2,3,4,5));
+console.log("nums ", nums(2, 3, 4, 5));
 
 
 
@@ -125,68 +125,68 @@ console.log("nums ",nums(2,3,4,5));
 const nums3 = [5, 6, 37, 4, 55]
 const nums4 = [46, 47, 58, 97]
 const concatArr = nums3.concat(nums4)
-console.log("concate array",concatArr);
+console.log("concate array", concatArr);
 
 
 
 //slice
 //is a non-mutating method that extracts a portion of an array, returning a new array containing the selected elements.
-const newSlice = arr.slice(0,2)
-console.log("slice array",newSlice);
+const newSlice = arr.slice(0, 2)
+console.log("slice array", newSlice);
 
 
 //splice
 //modifies the content of an array by removing elements and/or adding new elements at a specified index. It also returns an array containing the removed elements.
- arr.splice(1,2,"cherry")
-console.log("splice array",arr);
+arr.splice(1, 2, "cherry")
+console.log("splice array", arr);
 
 
 
 //fill
 //method fills specified elements in an array with a value. It can modify the entire array or a specific range of elements.
-const dummy=[3,4,5,6,7]
+const dummy = [3, 4, 5, 6, 7]
 dummy.fill(2)
-console.log("fill dummy",dummy);
+console.log("fill dummy", dummy);
 
 
 
 //findIndex
 //Finds the index based on a custom condition
 //it give index or -1
-const index = nums4.findIndex((items)=> items===97)
-console.log("find index" ,index);
+const index = nums4.findIndex((items) => items === 97)
+console.log("find index", index);
 
 
 
 //flat
 //creates a new array with all sub-array elements concatenated into it up to a specified depth.
-const num5= [1,[2,3],[4,5,[6]]]
+const num5 = [1, [2, 3], [4, 5, [6]]]
 const flatArray = num5.flat(Infinity)
-console.log("flat",flatArray);
+console.log("flat", flatArray);
 
 
 
 //reverse
 //that directly modifies the original array. It reverses the order of elements in-place, making the last element the first, the second-to-last element the second, and so on.
 flatArray.reverse()
-console.log("reverse",flatArray);
+console.log("reverse", flatArray);
 
 
 
 //sort
 //sort the elements of an array in a specific order. 
-const unsorted =[4,3,23,6,16]
-unsorted.sort((a,b)=>a-b)
-console.log("sort",unsorted);
+const unsorted = [4, 3, 23, 6, 16]
+unsorted.sort((a, b) => a - b)
+console.log("sort", unsorted);
 
 
 
 //from
 //It's a versatile tool used to create a new array from various iterable objects or array-like objects. 
 //convert into array
-const str="hello"
+const str = "hello"
 const charArray = Array.from(str);
-console.log("from array",charArray);
+console.log("from array", charArray);
 
 
 
