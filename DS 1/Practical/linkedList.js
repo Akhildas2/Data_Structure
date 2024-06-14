@@ -133,7 +133,7 @@ class LinkedList {
                 listValues += `${current.value} `;
                 current = current.next;
             }
-            console.log(listValues.trim());
+            console.log(listValues);
         }
     }
 }

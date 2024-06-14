@@ -34,5 +34,11 @@ function rangeOfNumber(start, end) {
 
 console.log(rangeOfNumber(0, 5))
 
+//rverse using recursion
+function reverseString(str) {
+    if (str === "") {
+        return "";
+    } else return reverseString(str.substr(1)) + str.charAt(0);
 
-
+}
+console.log(reverseString("akhil"));
