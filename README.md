@@ -14,8 +14,6 @@
 7. **Binary Search**
 8. **Asymptotic Notation**
 
-
-
 ### Practical
 
 1. **Palindrome Number**
@@ -35,6 +33,17 @@
 ## Data Structure Second Week
 ### Theory
 
-1. **Algorithm**
+1. **Sorting**
+2. **Bubble Sort**
+3. **Selection Sort**
+4. **Insertion Sort**
+
+### Practical
+
+1. **Bubble sort**
+2. **Selection Sort**
+3. **Insertion Sort**
+
+
 
 
