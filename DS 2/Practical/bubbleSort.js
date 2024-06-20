@@ -11,7 +11,7 @@ const bubbleSort = (arr) => {
     }
     return arr;
 };
-console.log(bubbleSort([28,12,10,23,34,68,44]));
+console.log(bubbleSort([28, 12, 10, 23, 34, 68, 44]));
 
 //Best Time Complexity = O(2n)=>O(n)
 //Worst Time Complexity = O(n^2)
