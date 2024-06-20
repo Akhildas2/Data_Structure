@@ -33,13 +33,12 @@
 
     Pros:
     -----
-        * Simple to implement.
-        * Stable sorting algorithm.
-        * Adaptive; efficient for small or nearly sorted arrays.
+    * Simple to implement.
+    * Stable sorting algorithm.
+    * Adaptive; efficient for small or nearly sorted arrays.
 
     Cons:
     -----
-    
     * Inefficient for large datasets.
     * O(n^2) time complexity in average and worst cases.
     * Not as fast as more advanced sorting algorithms like quicksort or mergesort.

@@ -25,13 +25,14 @@
 
     Pros:
     -----
-        1.Simple to implement and understand.
-        2.Performs well on small lists.
-        3.In-place sorting algorithm, requiring no additional memory.
+    1.Simple to implement and understand.
+    2.Performs well on small lists.
+    3.In-place sorting algorithm, requiring no additional memory.
+   
     Cons:
     -----
-        1.Inefficient on large lists with a time complexity of O(n^2).
-        2.Not stable, meaning the relative order of equal elements may not be preserved.
+    1.Inefficient on large lists with a time complexity of O(n^2).
+    2.Not stable, meaning the relative order of equal elements may not be preserved.
 
 
 6.Time Complexity:

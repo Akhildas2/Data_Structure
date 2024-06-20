@@ -38,15 +38,15 @@
 
     Pros:
     -----
-        1.Simplicity: Easy to understand and implement.
-        2.Stability: Maintains the relative order of equal elements.
-        3.Adaptive: Can stop early if the list is already sorted.
+    1.Simplicity: Easy to understand and implement.
+    2.Stability: Maintains the relative order of equal elements.
+    3.Adaptive: Can stop early if the list is already sorted.
     
     Cons:
     -----
-        1.Inefficiency: O(n^2) time complexity in the average and worst cases.
-        2.High number of comparisons and swaps: Not suitable for large datasets.
-        3.Performance: Generally slower compared to more efficient sorting algorithms like quicksort or mergesort.
+    1.Inefficiency: O(n^2) time complexity in the average and worst cases.
+    2.High number of comparisons and swaps: Not suitable for large datasets.
+    3.Performance: Generally slower compared to more efficient sorting algorithms like quicksort or mergesort.
 
 
 
