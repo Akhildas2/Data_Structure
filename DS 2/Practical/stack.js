@@ -1,38 +1,38 @@
 //stack
 
-class Stack{
-    constructor(){
-        this.stack = [];       
+class Stack {
+    constructor() {
+        this.stack = [];
     }
-    push(element){
+    push(element) {
         this.stack.push(element)
     }
-    pop(){
-        if(this.isEmpty()){
+    pop() {
+        if (this.isEmpty()) {
             return "Stack is Empty"
         }
         return this.stack.pop();
     }
-    peek(){
-        if(this.isEmpty()){
+    peek() {
+        if (this.isEmpty()) {
             return "Stack is Empty"
         }
-        return this.stack[this.size()-1]
+        return this.stack[this.size() - 1]
     }
-    isEmpty(){
+    isEmpty() {
         return this.size() === 0
     }
-    size(){
+    size() {
         return this.stack.length
     }
-    isPrint(){
-        if(this.isEmpty()){
+    isPrint() {
+        if (this.isEmpty()) {
             return "Stack is Empty"
         }
 
-     this.stack.forEach(element=>{
-        console.log(element);
-     })
+        this.stack.forEach(element => {
+            console.log(element);
+        })
     }
 }
 const stack = new Stack();
