@@ -12,7 +12,7 @@ Binary search is a fast algorithm used to find the position of a target value in
 ### 2. Calculate Midpoint
 - Compute the middle index `mid` of the array segment as:
   \[
-  \text{mid} = \left\lfloor \frac{\text{start} + \text{end}}{2} \right\rfloor
+    mid =Math.floor(start +  end) / 2.
   \]
 
 ### 3. Comparison
