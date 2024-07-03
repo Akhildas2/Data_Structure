@@ -4,19 +4,19 @@
 // 1.Open brackets are closed by the same type of brackets.
 // 2.Open brackets are closed in the correct order.
 
-function isValid(s){
-    let stack=[];
-    let map={
-        '(':')',
-        '{':'}',
-        '[':']'
+function isValid(s) {
+    let stack = [];
+    let map = {
+        '(': ')',
+        '{': '}',
+        '[': ']'
     }
-    for (let i=0;i<s.length;i++){ //O(n)
-        if(map[s[i]]){
+    for (let i = 0; i < s.length; i++) { //O(n)
+        if (map[s[i]]) {
             stack.push(s[i]);
-        }else{
-            let last=stack.pop()
-            if(s[i] !== map[last]){
+        } else {
+            let last = stack.pop()
+            if (s[i] !== map[last]) {
                 return false
             }
         }
@@ -36,31 +36,31 @@ console.log(isValid("()[]")); // true
 // Reverse a String using Stack
 //Question: Reverse a string using a stack.
 
-class Stack{
-    constructor(){
-        this.items =[]
+class Stack {
+    constructor() {
+        this.items = []
     }
-    isEmpty(){
+    isEmpty() {
         return this.items.length === 0;
     }
-    push(element){
+    push(element) {
         this.items.push(element)
     }
-    pop(){
-        if(this.isEmpty()){
+    pop() {
+        if (this.isEmpty()) {
             return 'Underflow'
         }
         return this.items.pop()
     }
 
-    peek(){
-        if(this.isEmpty()){
+    peek() {
+        if (this.isEmpty()) {
             return "No element in stack"
         }
-        return this.items[this.items.length-1]
+        return this.items[this.items.length - 1]
     }
-    print(){
-      this.items.forEach(element => {
+    print() {
+        this.items.forEach(element => {
             console.log(element);
         });
     }

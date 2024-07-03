@@ -59,6 +59,6 @@ queue.enqueue(10);
 queue.enqueue(20);
 queue.enqueue(30);
 console.log(queue.dequeue());
-console.log(queue.peek()); 
-console.log(queue.getSize()); 
+console.log(queue.peek());
+console.log(queue.getSize());
 console.log(queue.isEmpty()); 

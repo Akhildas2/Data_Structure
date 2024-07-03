@@ -17,7 +17,7 @@ class Stack {
         return this.size === 0;
     }
 
-    
+
     push(data) {
         let newNode = new Node(data);
         newNode.next = this.top;
@@ -25,7 +25,7 @@ class Stack {
         this.size++;
     }
 
-  
+
     pop() {
         if (this.isEmpty()) {
             return null;
@@ -44,7 +44,7 @@ class Stack {
         return this.top.data;
     }
 
- 
+
     getSize() {
         return this.size;
     }
@@ -55,7 +55,7 @@ stack.push(10);
 stack.push(20);
 stack.push(30);
 
-console.log(stack.pop()); 
-console.log(stack.peek()); 
-console.log(stack.getSize()); 
+console.log(stack.pop());
+console.log(stack.peek());
+console.log(stack.getSize());
 console.log(stack.isEmpty()); 

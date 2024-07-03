@@ -3,7 +3,7 @@ class CircularQueue {
         this.queue = new Array(capacity);
         this.capacity = capacity;
         this.size = 0;
-        this.front = 0; 
+        this.front = 0;
     }
 
     enqueue(value) {
