@@ -29,3 +29,51 @@ console.log(isValid("()")); // true
 console.log(isValid("()[]{)")); // false
 console.log(isValid("(]")); // false
 console.log(isValid("()[]")); // true
+
+
+
+
+// Reverse a String using Stack
+//Question: Reverse a string using a stack.
+
+class Stack{
+    constructor(){
+        this.items =[]
+    }
+    isEmpty(){
+        return this.items.length === 0;
+    }
+    push(element){
+        this.items.push(element)
+    }
+    pop(){
+        if(this.isEmpty()){
+            return 'Underflow'
+        }
+        return this.items.pop()
+    }
+
+    peek(){
+        if(this.isEmpty()){
+            return "No element in stack"
+        }
+        return this.items[this.items.length-1]
+    }
+    print(){
+      this.items.forEach(element => {
+            console.log(element);
+        });
+    }
+    reverseString(inputString) {
+        let reversed = '';
+        for (let i = 0; i < inputString.length; i++) {
+            this.push(inputString[i]);
+        }
+        while (!this.isEmpty()) {
+            reversed += this.pop();
+        }
+        return reversed;
+    }
+}
+let stack = new Stack();
+console.log(stack.reverseString("hello"));
