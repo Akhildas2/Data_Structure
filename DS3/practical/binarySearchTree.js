@@ -1,160 +1,186 @@
 class Node {
     constructor(value) {
-        this.value = value
-        this.left = null
-        this.right = null
+        this.value = value;
+        this.left = null;
+        this.right = null;
     }
 }
 
 class BinarySearchTree {
     constructor() {
-        this.root = null
+        this.root = null;
     }
+
     isEmpty() {
-        return this.root === null
+        return this.root === null;
     }
+
     insert(value) {
-        const newNode = new Node(value)
+        const newNode = new Node(value);
         if (this.isEmpty()) {
-            this.root = newNode
+            this.root = newNode;
         } else {
-            this.insertNode(this.root, newNode)
+            this.insertNode(this.root, newNode);
         }
     }
+
     insertNode(root, newNode) {
         if (newNode.value < root.value) {
             if (root.left === null) {
-                root.left = newNode
+                root.left = newNode;
             } else {
-                this.insertNode(root.left, newNode)
+                this.insertNode(root.left, newNode);
             }
         } else {
             if (root.right === null) {
-                root.right = newNode
+                root.right = newNode;
             } else {
-                this.insertNode(root.right, newNode)
+                this.insertNode(root.right, newNode);
             }
         }
     }
 
-    serach(root, value) {
+    search(root, value) {
         if (!root) {
-            return false
+            return false;
         } else {
             if (root.value === value) {
-                return true
+                return true;
             } else if (value < root.value) {
-                return this.serach(root.left, value)
+                return this.search(root.left, value);
             } else {
-                return this.serach(root.right, value)
+                return this.search(root.right, value);
             }
         }
     }
 
-    //dfs 
     preOrder(root) {
         if (root) {
             console.log(root.value);
-            this.preOrder(root.left)
-            this.preOrder(root.right)
+            this.preOrder(root.left);
+            this.preOrder(root.right);
         }
     }
+
     inOrder(root) {
         if (root) {
-            this.inOrder(root.left)
-            console.log(root.value)
-            this.inOrder(root.right)
+            this.inOrder(root.left);
+            console.log(root.value);
+            this.inOrder(root.right);
         }
     }
+
     postOrder(root) {
         if (root) {
-            this.postOrder(root.left)
-            this.postOrder(root.right)
-            console.log(root.value)
-
+            this.postOrder(root.left);
+            this.postOrder(root.right);
+            console.log(root.value);
         }
     }
 
-
-    //bfs
     levelOrder() {
         const queue = [];
-        queue.push(this.root)
+        queue.push(this.root);
         while (queue.length) {
-            let curr = queue.shift()
+            let curr = queue.shift();
             console.log(curr.value);
             if (curr.left) {
-                queue.push(curr.left)
+                queue.push(curr.left);
             }
             if (curr.right) {
-                queue.push(curr.right)
+                queue.push(curr.right);
             }
-
         }
     }
-
 
     min(root) {
         if (!root.left) {
-            return root.value
+            return root.value;
         } else {
-            return this.min(root.left)
+            return this.min(root.left);
         }
-
     }
+
     max(root) {
         if (!root.right) {
-            return root.value
+            return root.value;
         } else {
-            return this.max(root.right)
+            return this.max(root.right);
         }
     }
 
     delete(value) {
-        this.root = this.deleteNode(this.root, value)
-
+        this.root = this.deleteNode(this.root, value);
     }
+
     deleteNode(root, value) {
         if (root === null) {
-            return root
+            return root;
         }
         if (value < root.value) {
-            root.left = this.deleteNode(root.left, value)
-        } else if(value > root.value){
-            root.right = this.deleteNode(root.right,value)
-        }else{
-            if(!root.left && !root.right){
-                return null
+            root.left = this.deleteNode(root.left, value);
+        } else if (value > root.value) {
+            root.right = this.deleteNode(root.right, value);
+        } else {
+            if (!root.left && !root.right) {
+                return null;
             }
-            if(!root.left ){
-                return root.right
-            }else if(!root.right){
-                return root.left
+            if (!root.left) {
+                return root.right;
+            } else if (!root.right) {
+                return root.left;
             }
-            root.value = this.min(root,right);
-            root.right = this.deleteNode(root.right,root.value)
+            root.value = this.min(root.right);
+            root.right = this.deleteNode(root.right, root.value);
         }
-        return root
+        return root;
     }
 
+    findClosestValue(target) {
+        let current = this.root;
+        let closest = current.value;
 
+        while (current !== null) {
+            if (Math.abs(target - closest) > Math.abs(target - current.value)) {
+                closest = current.value;
+            }
+
+            if (target < current.value) {
+                current = current.left;
+            } else if (target > current.value) {
+                current = current.right;
+            } else {
+                break;
+            }
+        }
+
+        return closest;
+    }
+
+    validateBST() {
+        return this._validateBSTHelper(this.root, -Infinity, Infinity);
+    }
+
+    _validateBSTHelper(node, min, max) {
+        if (node === null) return true;
+        if (node.value <= min || node.value >= max) return false;
+        return this._validateBSTHelper(node.left, min, node.value) &&
+               this._validateBSTHelper(node.right, node.value, max);
+    }
 }
 
+const bst = new BinarySearchTree();
+bst.insert(34);
+bst.insert(44);
+bst.insert(24);
+bst.insert(64);
+bst.insert(4);
 
-const bst = new BinarySearchTree()
-bst.insert(34)
-bst.insert(44)
-bst.insert(24)
-bst.insert(64)
-bst.insert(4)
+console.log(bst.search(bst.root, 34)); // true
+console.log(bst.search(bst.root, 4));  // true
+bst.levelOrder();  // 34, 24, 44, 4, 64
+bst.delete(4);
+bst.levelOrder();  // 34, 24, 44, 64
 
-console.log(bst.serach(bst.root, 34));
-console.log(bst.serach(bst.root, 4));
-// bst.preOrder(bst.root)
-// bst.inOrder(bst.root)
-// bst.postOrder(bst.root)
-bst.levelOrder()
-// console.log(bst.min(bst.root));
-// console.log(bst.max(bst.root));
-bst.delete(4)
-bst.levelOrder()
+console.log("Closest to 23:", bst.findClosestValue(23)); // 24
+console.log("Is Valid BST:", bst.validateBST()); // true
