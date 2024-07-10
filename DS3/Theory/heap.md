@@ -40,6 +40,5 @@ A heap is a specialized binary tree-based data structure that satisfies the heap
   - Insertion: \( O(\log n) \)
   - Deletion: \( O(\log n) \)
   - Heap Construction: \( O(n) \)
-  
-- **Space Complexity**: 
+- **Space Complexity**:
   - The space complexity of a heap is \( O(n) \), where \( n \) is the number of elements in the heap, due to the storage requirements of the elements themselves.
