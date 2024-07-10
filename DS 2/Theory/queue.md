@@ -15,8 +15,8 @@ A Queue is a linear data structure that follows the First In, First Out (FIFO) p
 
 ## 3. Implementation
 
-* **Array-Based Queues:** Efficient for enqueue and dequeue at the rear, but less efficient for dequeue or peek at the front if elements need to be shifted.
-* **Linked List-Based Queues:** More flexible for insertions or deletions at any position, but may have overhead for node creation/deletion compared to arrays.
+- **Array-Based Queues:** Efficient for enqueue and dequeue at the rear, but less efficient for dequeue or peek at the front if elements need to be shifted.
+- **Linked List-Based Queues:** More flexible for insertions or deletions at any position, but may have overhead for node creation/deletion compared to arrays.
 
 ## 4. Applications of Queues
 
@@ -57,21 +57,23 @@ Queues are used in various applications where tasks need to be managed in the or
 
 ### Array-based Queue:
 
-* **Time Complexity:**
-    - Enqueue: O(1)
-    - Dequeue: O(1)
-    - Peek: O(1)
-    - IsEmpty: O(1)
-    - IsFull: O(1)
+- **Time Complexity:**
 
-* **Space Complexity:** O(n) where n is the size of the array.
+  - Enqueue: O(1)
+  - Dequeue: O(1)
+  - Peek: O(1)
+  - IsEmpty: O(1)
+  - IsFull: O(1)
+
+- **Space Complexity:** O(n) where n is the size of the array.
 
 ### Linked List-based Queue:
 
-* **Time Complexity:**
-    - Enqueue: O(1)
-    - Dequeue: O(1)
-    - Peek: O(1)
-    - IsEmpty: O(1)
+- **Time Complexity:**
 
-* **Space Complexity:** O(n) where n is the number of elements, including extra space for pointers.
+  - Enqueue: O(1)
+  - Dequeue: O(1)
+  - Peek: O(1)
+  - IsEmpty: O(1)
+
+- **Space Complexity:** O(n) where n is the number of elements, including extra space for pointers.

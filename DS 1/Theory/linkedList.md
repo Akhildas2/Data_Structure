@@ -3,16 +3,19 @@
 ## 1.What is a Linked List?
 
 A linked list is a linear data structure where each element, called a node, consists of two main parts:
+
 1. **Data**: The actual value or information stored in the node.
 2. **Pointer (Next)**: A reference or link to the next node in the sequence.
 
 ## 2.Types of Linked Lists
 
 1. **Singly Linked List**:
+
    - Each node points to the next node in the sequence.
    - The last node points to `null`, indicating the end of the list.
 
 2. **Doubly Linked List**:
+
    - Each node has two pointers: one to the next node and one to the previous node.
    - Allows traversal in both forward and backward directions.
 

@@ -165,7 +165,7 @@ class BinarySearchTree {
         if (node === null) return true;
         if (node.value <= min || node.value >= max) return false;
         return this._validateBSTHelper(node.left, min, node.value) &&
-               this._validateBSTHelper(node.right, node.value, max);
+            this._validateBSTHelper(node.right, node.value, max);
     }
 }
 

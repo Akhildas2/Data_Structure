@@ -13,13 +13,13 @@ Insertion sort is a sorting algorithm that iteratively builds a sorted sub-array
 
 ## 3. Time Complexity:
 
-* **Best Case:** O(n) when the array is already sorted.
-* **Average Case:** O(n^2)
-* **Worst Case:** O(n^2) when the array is sorted in reverse order.
+- **Best Case:** O(n) when the array is already sorted.
+- **Average Case:** O(n^2)
+- **Worst Case:** O(n^2) when the array is sorted in reverse order.
 
-## 4. Space Complexity: 
+## 4. Space Complexity:
 
-* O(1) because it requires a constant amount of additional memory space.
+- O(1) because it requires a constant amount of additional memory space.
 
 ## 5. Applications:
 
@@ -33,12 +33,12 @@ Insertion sort is a sorting algorithm that iteratively builds a sorted sub-array
 
 ### Pros:
 
-* Simple to implement.
-* Stable sorting algorithm.
-* Adaptive; efficient for small or nearly sorted arrays.
+- Simple to implement.
+- Stable sorting algorithm.
+- Adaptive; efficient for small or nearly sorted arrays.
 
 ### Cons:
 
-* Inefficient for large datasets.
-* O(n^2) time complexity in average and worst cases.
-* Not as fast as more advanced sorting algorithms like quicksort or mergesort.
+- Inefficient for large datasets.
+- O(n^2) time complexity in average and worst cases.
+- Not as fast as more advanced sorting algorithms like quicksort or mergesort.

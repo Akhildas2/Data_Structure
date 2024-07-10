@@ -1,14 +1,18 @@
 # Binary Search Tree (BST)
 
 ## 1.Introduction of BST
+
 A Binary Search Tree (BST) is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child. The key property of a BST is that for each node:
+
 - The values in the left subtree are less than the node's value.
 - The values in the right subtree are greater than the node's value.
 
 This ordering property allows for efficient search, insertion, and deletion operations, typically achieving an average time complexity of O(log n) for these operations when the tree is balanced.
 
-## 2.Properties 
+## 2.Properties
+
 1. **Node Structure**:
+
    - Each node contains a value.
    - Each node has at most two children: a left child and a right child.
 
@@ -20,40 +24,43 @@ This ordering property allows for efficient search, insertion, and deletion oper
 ## 3.Operations
 
 ### 1.Search
+
 - Start at the root.
 - If the target value is less than the current node's value, move to the left child.
 - If the target value is greater than the current node's value, move to the right child.
 - Repeat until the target value is found or the subtree is null.
 
 ### 2.Insertion
+
 - Start at the root.
 - Compare the value to be inserted with the current node's value.
 - If the value is less than the current node's value, move to the left child; if greater, move to the right child.
 - When a null position is found, insert the new value there.
 
 ### 3.Deletion
+
 - **Node with no children (leaf)**: Simply remove the node.
 - **Node with one child**: Remove the node and replace it with its child.
 - **Node with two children**: Find the in-order successor (smallest value in the right subtree) or in-order predecessor (largest value in the left subtree), copy its value to the node to be deleted, and then delete the successor or predecessor.
-
 
 ## 4.Example
 
 Consider the following BST:
 
-   50
-  /  \
-30    70
-
+50
+/ \
+30 70
 
 ### Operations
 
 - **Search for 40**:
+
   - Start at 50: 40 < 50, move left.
   - At 30: 40 > 30, move right.
   - At 40: Found.
 
 - **Insert 25**:
+
   - Start at 50: 25 < 50, move left.
   - At 30: 25 < 30, move left.
   - At 20: 25 > 20, move right.
@@ -83,8 +90,8 @@ Consider the following BST:
 - **Skewed Trees**: If not balanced, the tree can become skewed (like a linked list), causing operations to degrade to \(O(n)\).
 - **Balancing**: Requires self-balancing techniques like AVL trees or Red-Black trees to maintain \(O(\log n)\) operations consistently.
 
-
 ## For Animation
+
 [Binary Search Tree Animation](https://yongdanielliang.github.io/animation/web/BST.html)
 
 [VisuAlgo: Binary Search Tree](https://visualgo.net/en/bst)

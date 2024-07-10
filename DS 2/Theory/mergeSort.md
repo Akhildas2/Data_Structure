@@ -18,10 +18,10 @@ Merge sort is a sorting algorithm that follows the divide-and-conquer paradigm. 
 
 ## 4. Applications of Merge Sort
 
-* **External Sorting:** Particularly useful for sorting large data sets that do not fit into memory and are stored on external storage like disk drives.
-* **Linked Lists:** Efficient for sorting linked lists as it doesn't require random access.
-* **Inversion Count:** Used in algorithms that count the number of inversions in an array.
-* **Data Processing Pipelines:** Often used in data processing pipelines where stability and performance are critical.
+- **External Sorting:** Particularly useful for sorting large data sets that do not fit into memory and are stored on external storage like disk drives.
+- **Linked Lists:** Efficient for sorting linked lists as it doesn't require random access.
+- **Inversion Count:** Used in algorithms that count the number of inversions in an array.
+- **Data Processing Pipelines:** Often used in data processing pipelines where stability and performance are critical.
 
 ## 5. Pros and Cons
 
@@ -30,7 +30,7 @@ Merge sort is a sorting algorithm that follows the divide-and-conquer paradigm. 
 1. **Stable Sorting:** Maintains the relative order of equal elements.
 2. **Consistent Performance:** Has a guaranteed time complexity of O(nlogn) for all cases (worst, average, best).
 3. **Parallelizable:** The divide-and-conquer approach lends itself well to parallel execution.
-4. **Suitable for Linked Lists:** Efficient for sorting linked lists as it does not require random access.   
+4. **Suitable for Linked Lists:** Efficient for sorting linked lists as it does not require random access.
 
 ### Cons:
 
@@ -41,10 +41,10 @@ Merge sort is a sorting algorithm that follows the divide-and-conquer paradigm. 
 
 ## 6. Time Complexity:
 
-* **Best Case:** O(nlogn)
-* **Average Case:** O(nlogn)
-* **Worst Case:** O(nlogn)
+- **Best Case:** O(nlogn)
+- **Average Case:** O(nlogn)
+- **Worst Case:** O(nlogn)
 
 ## 7. Space Complexity:
 
-* O(n) due to the extra space needed for merging.
+- O(n) due to the extra space needed for merging.

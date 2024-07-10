@@ -19,9 +19,9 @@ QuickSort is a popular sorting algorithm based on the divide-and-conquer strateg
 
 ## 4. Applications
 
-* Sorting large datasets for search algorithms (like binary search).
-* Implementing order statistics algorithms (finding the kth smallest/largest element in an array).
-* Used in libraries and systems where efficient sorting of data is crucial (e.g., in databases, compilers, etc.).
+- Sorting large datasets for search algorithms (like binary search).
+- Implementing order statistics algorithms (finding the kth smallest/largest element in an array).
+- Used in libraries and systems where efficient sorting of data is crucial (e.g., in databases, compilers, etc.).
 
 ## 5. Pros and Cons
 

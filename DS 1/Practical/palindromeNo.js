@@ -8,7 +8,7 @@
 
 // palindrome program in javascript 
 const isPalindrome = (x) => {
-    return x < 0 ? false :x.toString() === x.toString().split("").reverse().join("");
+    return x < 0 ? false : x.toString() === x.toString().split("").reverse().join("");
 }
 let result = isPalindrome(1021)
-console.log("result",result);
+console.log("result", result);

@@ -38,10 +38,10 @@ Selection Sort is a sorting algorithm that works by repeatedly selecting the sma
 
 ## 6. Time Complexity:
 
-* Best Case: O(n^2)
-* Average Case: O(n^2)
-* Worst Case: O(n^2)
+- Best Case: O(n^2)
+- Average Case: O(n^2)
+- Worst Case: O(n^2)
 
 ## 7. Space Complexity:
 
-* O(1) because it requires a constant amount of additional memory space.
+- O(1) because it requires a constant amount of additional memory space.

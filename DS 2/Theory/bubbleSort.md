@@ -15,9 +15,9 @@ Bubble Sort is a simple comparison-based sorting algorithm. It is named for the 
 ## 3. Characteristics
 
 1. **Time Complexity:**
-    - **Worst-case:** O(n^2) (when the array is sorted in reverse order.)
-    - **Average-case:** O(n^2)
-    - **Best-case:** O(n) (when the array is already sorted.)
+   - **Worst-case:** O(n^2) (when the array is sorted in reverse order.)
+   - **Average-case:** O(n^2)
+   - **Best-case:** O(n) (when the array is already sorted.)
 2. **Space Complexity:** O(1) (because it requires a constant amount of additional memory space.)
 3. **Stability:** Yes (does not change the relative order of equal elements)
 4. **Adaptive:** Yes (performance improves if the list is partially sorted)
