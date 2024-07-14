@@ -45,7 +45,7 @@
 ### Practical
 
 1. **Bubble Sort**
-2. **Circular Queue**  
+2. **Circular Queue**
 3. **Hash Table**
 4. **Insertion Sort**
 5. **Merge Sort**
@@ -59,8 +59,23 @@
 13. **Stack using Linked List**
 14. **Stack Using Queue**
 
-## Data Structure Second Week
- 
+## Data Structure Third Week
+
 ### Theory
 
+1. **Binary Search Tree**
+2. **Graph**
+3. **Heap**
+4. **Heap Sort**
+5. **Tree**
+6. **Trie**
+
 ### Practical
+
+1. **Binary Search Tree**
+2. **Graph**
+3. **Graph Using Map**
+4. **Heap Sort**
+5. **Max Heap**
+6. **Min Heap**
+7. **Trie**
